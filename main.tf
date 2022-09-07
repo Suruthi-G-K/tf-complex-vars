@@ -55,7 +55,7 @@ resource "null_resource" "nested_complex_test" {
 
 output "test_tuple" {
   value       = var.simple_tuple[*]
-  description = "simple tuple entries"
+  description = "simple tuple entries1"
 }
 
 
