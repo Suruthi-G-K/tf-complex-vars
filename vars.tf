@@ -1,7 +1,7 @@
 # Configure these variables
 
 variable "TF_VERSION" {
-  description = "terraform version."
+  description = "terraform version 1."
   default     = 0.13
 }
 
