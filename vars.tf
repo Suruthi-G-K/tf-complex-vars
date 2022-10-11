@@ -15,6 +15,11 @@ variable "sample_var1" {
   default     = "hello1"
 }
 
+variable "sample_var2" {
+  description = "A sample var to pass to the template2."
+  default     = "hello2"
+}
+
 variable "sleepy_time" {
   description = "How long Rocky naps before the series of fights"
   type = number
