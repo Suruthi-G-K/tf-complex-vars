@@ -39,6 +39,14 @@ data "template_file4" "test4" {
   }
 }
 
+data "template_file5" "test5" {
+  template = "Hello, I am a template. My sample_var5 value = $${sample_var5}"
+
+  vars = {
+    sample_var = var.sample_var5
+  }
+}
+
 resource "null_resource" "sleep" {
   triggers = {
     uuid = uuid()
