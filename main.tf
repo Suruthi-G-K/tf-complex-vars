@@ -27,7 +27,15 @@ data "template_file3" "test3" {
   template = "Hello, I am a template. My sample_var3 value = $${sample_var3}"
 
   vars = {
-    sample_var3 = var.sample_var3
+    sample_var = var.sample_var3
+  }
+}
+
+data "template_file4" "test4" {
+  template = "Hello, I am a template. My sample_var4 value = $${sample_var4}"
+
+  vars = {
+    sample_var = var.sample_var4
   }
 }
 
