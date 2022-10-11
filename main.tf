@@ -8,10 +8,18 @@ data "template_file" "test" {
 }
 
 data "template_file1" "test1" {
-  template = "Hello, I am a template. My sample_var1 value = $${sample_var}"
+  template = "Hello, I am a template. My sample_var1 value = $${sample_var1}"
 
   vars = {
     sample_var = var.sample_var1
+  }
+}
+
+data "template_file2" "test2" {
+  template = "Hello, I am a template. My sample_var2 value = $${sample_var2}"
+
+  vars = {
+    sample_var = var.sample_var2
   }
 }
 
