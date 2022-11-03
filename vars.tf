@@ -10,31 +10,6 @@ variable "sample_var" {
   default     = "hello"
 }
 
-variable "sample_var1" {
-  description = "A sample var to pass to the template1."
-  default     = "hello1"
-}
-
-variable "sample_var2" {
-  description = "A sample var to pass to the template2."
-  default     = "hello2"
-}
-
-variable "sample_var3" {
-  description = "A sample var to pass to the template3."
-  default     = "hello3"
-}
-
-variable "sample_var4" {
-  description = "A sample var to pass to the template4."
-  default     = "hello4"
-}
-
-variable "sample_var5" {
-  description = "A sample var to pass to the template5."
-  default     = "hello5"
-}
-
 variable "sleepy_time" {
   description = "How long Rocky naps before the series of fights"
   type = number
