@@ -7,46 +7,6 @@ data "template_file" "test" {
   }
 }
 
-data "template_file1" "test1" {
-  template = "Hello, I am a template. My sample_var1 value = $${sample_var1}"
-
-  vars = {
-    sample_var = var.sample_var1
-  }
-}
-
-data "template_file2" "test2" {
-  template = "Hello, I am a template. My sample_var2 value = $${sample_var2}"
-
-  vars = {
-    sample_var = var.sample_var2
-  }
-}
-
-data "template_file3" "test3" {
-  template = "Hello, I am a template. My sample_var3 value = $${sample_var3}"
-
-  vars = {
-    sample_var = var.sample_var3
-  }
-}
-
-data "template_file4" "test4" {
-  template = "Hello, I am a template. My sample_var4 value = $${sample_var4}"
-
-  vars = {
-    sample_var = var.sample_var4
-  }
-}
-
-data "template_file5" "test5" {
-  template = "Hello, I am a template. My sample_var5 value = $${sample_var5}"
-
-  vars = {
-    sample_var = var.sample_var5
-  }
-}
-
 resource "null_resource" "sleep" {
   triggers = {
     uuid = uuid()
